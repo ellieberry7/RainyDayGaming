@@ -1,0 +1,474 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover,
+a:active {
+  color: black;
+}
+
+nav a:link,
+nav a:visited {
+  color: white;
+}
+
+nav a:hover,
+nav a:active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #2c2640;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+/* Nav Bar */
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1rem;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 2rem;
+}
+
+nav img {
+  width: 6rem;
+}
+
+#logo {
+  display: flex;
+  padding: 2rem;
+}
+
+nav a {
+  font-size: 1.5rem;
+}
+
+/* Page 1 */
+#page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#CreateFind {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 15rem, 1rem;
+}
+
+#CreateFind > div {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+#CreateFind > div a {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: white;
+  width: 20rem;
+  text-align: center;
+}
+#CreateFind img {
+  width: 20rem;
+  height: 25rem;
+}
+
+#Tagline {
+  margin: 0rem, 20rem;
+  font-size: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: .5rem;
+}
+
+.wrapper {
+  height: 600px;
+  width: 632px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.button-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 300px;
+  height: 393px;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 300px;
+  height: 393px;
+}
+#GameArt1 {
+  background-image: url("../img/5e.jpg");
+
+}
+
+#GameArt2 {
+  background-image: url(../img/halo.jpeg);
+}
+
+#GameArt3 {
+  background-image: url(../img/smash.jpg);
+}
+
+#GameArt4 {
+  background-image: url(../img/wow.jpg);
+}
+
+.card button  {
+  height: 3rem;
+  background-color: rgb(211, 10, 10);
+  color: white;
+  border: none;
+  font-size: 1rem;
+
+}
+
+/* Page 2 */
+
+#Page2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin: .5rem;
+}
+
+#Search ul  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin: .5rem;
+}
+
+#Search ul li button{
+  background-color: rgb(252, 252, 252);
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+#Search ul li #SearchButton {
+  background-color: rgb(108, 3, 108);
+  font-size: 1.3rem;
+  padding: .5rem 4rem;
+  font-size: 2rem;
+  color: white;
+}
+
+#Tags {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  text-align: center;
+  border-radius: 25px;
+  margin: .5rem;
+}
+
+#Tags  ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+  margin: .5rem;
+  font-size: 1.1em;
+  
+}
+
+#Tags ul li {
+  color: white;
+}
+
+#Filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  text-align: row;
+  margin: .5rem;
+  margin-bottom: 1rem;
+}
+
+#Filter ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style: none;
+  margin-top: .5rem;
+  font-size: 1.1em;
+}
+
+#Filter ul li button{
+  background-color: rgb(108, 3, 108);
+  justify-content: flex-start;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: .5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+}
+
+#GroupProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.Group {
+  background-color: black;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  text-align: center;
+  padding: .25rem;
+  gap: .4rem;
+  }
+
+.Group img{
+  height: 7.5rem;
+  width: 15rem;
+}
+
+.Group h4 {
+    font-size: 1.2rem;
+  }
+
+.group h5 {
+  font-size: 1.1rem;
+
+ }
+
+.Group ul {
+  list-style: none;
+}
+.Group button {
+  margin-top: .4rem;
+  width: 14rem;
+  padding: .5rem;
+  background-color: rgb(211, 10, 10);
+  border: none;
+  color: white;
+}
+/* Page3 */
+
+#Page3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+#BannerImage {
+  background-image: url(../img/streetFighter.jpg) ;
+  background-repeat: no-repeat;
+  width: 960px;
+  height: 320px;
+  background-position:center center;
+  margin-top: 1rem;
+}
+
+#NameJoin {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin-top: -3rem;
+  width: 100%;
+}
+
+#NameJoin p {
+  background-color:  rgb(108, 3, 108);
+  padding: .5em 1.5em;
+  border: none;
+  border:2px;
+  border-color: black;
+  font-size: 2.5rem;
+}
+
+#NameJoin button {
+  background-color: rgb(211, 10, 10);
+  padding: .5em 3em;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 25px;
+}
+
+#GroupHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+ 
+}
+
+#GroupHeading h1 {
+  font-size: 3rem;
+}
+
+#GroupBody {
+  background-color: black;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+#GroupBody br {
+  margin-bottom: 1rem;
+}
+
+#UserPortraits {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#UserPortraits button {
+  border: none;
+  background-color:  rgb(108, 3, 108);
+  margin: 1rem;
+  padding: .5rem;
+  color: white;
+}
+#UserPortraits h1 {
+  font-size: 1.5rem;
+}
+#UserPortraits h2 {
+  font-size: 1.2rem;
+}
+#Portrait1{
+  background-image:url(../img/geif.png);
+  height: 14rem;
+  width: 14rem;
+  border-radius: 7rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#Portrait2{
+  background-image:url(../img/kirbo.png);
+  height: 14rem;
+  width: 14rem;
+  border-radius: 7rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#Portrait3{
+  background-image:url(../img/flag.jpg);
+  height: 14rem;
+  width: 14rem;
+  border-radius: 7rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* Foooter */
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  padding: 0.5rem;
+}
+footer a:link,
+footer a:visited {
+  color: white;
+}
+
+footer a:hover,
+footer a:active {
+  color: white;
+}
