@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainy Day Gaming</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <section id="logo" alt="Rainy Day Logo">
+          <a href="./index.html"><img src="./img/logo.png" /></a>
+          <div>
+            <h2>Rainy Day Gaming</h2>
+            <h3>Connecting Queer Gamers</h3>
+          </div>
+        </section>
+        <a href="#">Log In</a>
+      </nav>
+    </header>
+    <main class="Page1">
+      <section id="CreateFind">
+        <div>
+          <img src="./img/create.jpeg" alt="A blue game controller" />
+        
+          <a href="#">Create a Group</a>
+        
+        </div>
+        <div>
+          <img src="./img/find.jpeg" alt="d6 dice" />
+          <a href="./groups.html">Find a Group</a>
+
+        </div>
+      </section>
+      <h3>
+        <section id="Tagline">
+          Rainy Day Gaming helps LGBTQ+ gamers find community: <br />
+          from virtual tabletop to video games.
+          <hr/>
+          <h1>Popular Games</h1>
+        </section>
+        <div class="wrapper">
+          <ul class="carousel" data-target="carousel">
+            <li class="card" data-target="card">
+              <section id="GameArt1"></section>
+              <button type="button"><a href=#>Explore Groups</a></button>
+            </li>
+
+            <li class="card" data-target="card">
+              <section id="GameArt2"></section>
+              <button type="button"><a href=#>Explore Groups</a></button>
+            </li>
+            
+            <li class="card" data-target="card">
+              <section id="GameArt3"></section>
+              <button type="button"><a href=#>Explore Groups</a></button>
+            </li>
+            
+            <li class="card" data-target="card">
+              <section id="GameArt4"></section>
+              <button type="button"><a href=#>Explore Groups</a></button>
+            </li>
+            
+          </ul>
+          <div class="button-wrapper">
+            <button data-action="slideLeft"><</button>
+            <button data-action="slideRight">></button>
+          </div>
+        </div>
+        
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#"> Privacy Policy</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </footer>
+    <script>
+      // Select the carousel you'll need to manipulate and the buttons you'll add events to
+const carousel = document.querySelector("[data-target='carousel']");
+const card = carousel.querySelector("[data-target='card']");
+const leftButton = document.querySelector("[data-action='slideLeft']");
+const rightButton = document.querySelector("[data-action='slideRight']");
+
+// Prepare to limit the direction in which the carousel can slide, 
+// and to control how much the carousel advances by each time.
+// In order to slide the carousel so that only three cards are perfectly visible each time,
+// you need to know the carousel width, and the margin placed on a given card in the carousel
+const carouselWidth = carousel.offsetWidth;
+const cardStyle = card.currentStyle || window.getComputedStyle(card)
+const cardMarginRight = Number(cardStyle.marginRight.match(/\d+/g)[0]);
+
+// Count the number of total cards you have
+const cardCount = carousel.querySelectorAll("[data-target='card']").length;
+
+// Define an offset property to dynamically update by clicking the button controls
+// as well as a maxX property so the carousel knows when to stop at the upper limit
+let offset = 0;
+const maxX = -((cardCount / 2) * carouselWidth + 
+               (cardMarginRight * (cardCount / 2)) - 
+               carouselWidth - cardMarginRight);
+
+
+// Add the click events
+leftButton.addEventListener("click", function() {
+  if (offset !== 0) {
+    offset += carouselWidth + cardMarginRight;
+    carousel.style.transform = `translateX(${offset}px)`;
+    }
+})
+  
+rightButton.addEventListener("click", function() {
+  if (offset !== maxX) {
+    offset -= carouselWidth + cardMarginRight;
+    carousel.style.transform = `translateX(${offset}px)`;
+  }
+})
+    </script>
+  </body>
+</html>
